@@ -1,0 +1,78 @@
+html,
+body {
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header {
+  background: #1f1f1f;
+  color: #e2e2e2;
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.header-links {
+  display: flex;
+  gap: 0.5rem;
+}
+header a {
+  color: inherit;
+  text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  header {
+    font-size: medium;
+    transition: all 300ms ease-in-out;
+  }
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  padding: 0.5rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0.5rem;
+}
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: minmax(300px, 1fr); */
+  /* grid-auto-rows: minmax(300px, auto); */
+  /* column-count: 3;
+  grid-row: 3; */
+}
+
+.card {
+  flex-direction: column;
+  border: 2px solid #1f1f1f;
+  max-width: 300px;
+}
+.card > h3 {
+  background-color: #1f1f1f;
+  color: #e2e2e2;
+  padding: 0.5rem;
+}
+.card > p {
+  padding: 0.5rem;
+}
+aside {
+  background-color: #1f1f1f;
+  color: #e2e2e2;
+  padding: 0.5rem;
+  width: 18rem;
+}

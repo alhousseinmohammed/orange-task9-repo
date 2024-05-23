@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.text > * {
+  margin: 10px;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  background-color: white;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  height: fit-content;
+}
+
+.sub-container {
+  background-color: white;
+  border: solid  0.5px lightgrey;
+  display: grid;
+
+  grid-template-areas: "photo texty texty" "photo texty texty" "photo texty texty" "photo info info";
+}
+
+.sub-container div {
+  background-color: white;
+}
+
+.photo {
+  grid-area: photo;
+  background-color: white;
+}
+
+.text {
+  grid-area: texty;
+  background-color: white;
+}
+
+.info {
+  grid-area: info;
+  background-color: white;
+  display: grid;
+  grid-template-areas: "pphoto ptexty ptexty ptexty ptexty";
+}
+
+.profile-photo {
+  background-color: white;
+  grid-area: pphoto;
+  height: 2.5vw;
+  width: 2.5vw;
+  margin-left: 10px;
+}
+
+.profile-text {
+  margin-left: 0;
+  text-align: left;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.profile-text {
+  background-color: brown;
+  grid-area: ptexty;
+}
+
+
